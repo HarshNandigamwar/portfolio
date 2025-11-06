@@ -1,31 +1,15 @@
 @import "tailwindcss";
 
 body {
-  /* background-color: var(--bg-color); */
+  margin: 0px;
+  padding: 0px;
   background-color: #000000;
   color: #ffffff;
-  font-family: Average, sans-serif;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
-}
-
-/* Theme/Mode */
-:root {
-  /* Light-Mode */
-  --bg-color: #ffffff;
-  --maintext-color: #000000;
-  /* Theme */
-  --text-color: #9766e3;
-  --hovertext-color: #000000;
-  --subtext-color: #d8b4fe;
-}
-/* Dark-Mode */
-html.dark {
-  --bg-color: #000000;
-  --maintext-color: #ffffff;
-  --infotext-color: #d1d5dc;
 }
 
 /* For Webkit browsers (Chrome, Edge, Safari) */

@@ -5,27 +5,31 @@ import { MdMenu } from "react-icons/md";
 import { FaX } from "react-icons/fa6";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const logo = "<Shriharsh/>";
   const menu = [
     {
       name: "Home",
+      nav: "home",
     },
     {
       name: "About",
+      nav: "about",
     },
     {
       name: "Skills",
+      nav: "skills",
     },
     {
       name: "Projects",
+      nav: "project",
     },
     {
       name: "Contact",
+      nav: "contact",
     },
   ];
 
-  // Animation Variable for Mobile nav
   return (
     <nav className="w-full p-3 font-mono flex flex-col md:flex-row fixed backdrop-blur-sm">
       <div className="w-full flex items-center justify-between">
@@ -35,12 +39,13 @@ const Header = () => {
         <div className="hidden md:flex gap-5 ">
           {menu.map((data) => {
             return (
-              <p
+              <a
                 className="text-2xl p-1 hover:text-purple-400 hover:underline hover:underline-offset-8 cursor-pointer "
                 key={data.name}
+                href={`#${data.nav}`}
               >
                 {data.name}
-              </p>
+              </a>
             );
           })}
         </div>
@@ -69,9 +74,16 @@ const Header = () => {
           >
             {menu.map((data) => {
               return (
-                <p key={data.name} className="hover:text-purple-400 py-1">
+                <a
+                  key={data.name}
+                  href={`#${data.nav}`}
+                  className="hover:text-purple-400 py-1"
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                >
                   {data.name}
-                </p>
+                </a>
               );
             })}
           </motion.div>

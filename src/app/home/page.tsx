@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 const home = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row p-2 items-center pt-20">
+    <div
+      id="home"
+      className="w-full flex flex-col md:flex-row p-2 items-center pt-20 h-screen"
+    >
       {/* Image */}
       <div className="p-2 w-[50%] hidden md:flex items-center justify-center">
         <Image
@@ -28,7 +31,7 @@ const home = () => {
       {/*Info  */}
       <div className="text-center p-2 w-full md:w-[50%]">
         <h2 className="text-3xl md:text-5xl xl:text-4xl mb-2"> Hello, I'm</h2>
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-purple-400">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-purple-400">
           Shriharsh Nandigamwar
         </h1>
         <h2 className="text-xl md:text-4xl font-medium mb-4">
@@ -39,18 +42,18 @@ const home = () => {
           A Full Stack Developer passionate about crafting seamless digital
           experiences. Always excited to tackle new challenges where I can
           create value and grow as a coder. Let&apos;s connect if you&apos;ve
-          got a project that could use my skills!
+          got a project that could use my skills
         </p>
         {/* Button */}
-        <div className="flex justify-center relative gap-4 top-5 ">
+        <div className="flex justify-center gap-4 top-5 ">
           <motion.a
             whileTap={{ scale: 0.9 }}
             whileHover={{
               backgroundColor: "#9766e3",
             }}
             transition={{ duration: 0.2 }}
-            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full transition ease-in-out hover:text-black"
-            href=""
+            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full ease-in-out hover:text-black transform transition-transform duration-300 hover:scale-105"
+            href="#project"
           >
             See My Work
           </motion.a>
@@ -60,19 +63,19 @@ const home = () => {
               backgroundColor: "#9766e3",
             }}
             transition={{ duration: 0.2 }}
-            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full transition ease-in-out hover:text-black"
-            href=""
+            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full transform transition-transform duration-300 hover:scale-105 hover:text-black"
+            href="#contact"
           >
             Let's Connect
           </motion.a>
         </div>
-        <div className="relative top-10 flex flex-col md:flex-row items-center justify-center gap-5">
+        <div className="mt-5 flex flex-col md:flex-row items-center justify-center gap-5">
           {/* Social link */}
           <div className=" flex">
             {/* GitHub */}
             <a
               href="https://github.com/HarshNandigamwar"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] duration-75 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80 transform transition-transform duration-300 hover:scale-105"
               target="_blank"
             >
               <svg
@@ -87,7 +90,7 @@ const home = () => {
             {/* Linkedin */}
             <a
               href="https://www.linkedin.com/in/shriharsh-nandigamwar-b106702b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] duration-75 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
               target="_blank"
             >
               <svg
@@ -111,7 +114,7 @@ const home = () => {
             {/* X */}
             <a
               href="https://x.com/Harsh477011?s=09"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] duration-75 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
               target="_blank"
             >
               <svg
@@ -129,7 +132,7 @@ const home = () => {
             href="/documents/Shriharsh_Nandigamwar_resume.pdf"
             download="ShriharshNandigamwar_FullstackDeveloper.pdf"
           >
-            <button className="relative p-[10px_20px] border border-purple-400 text-purple-400 cursor-pointer text-[1.1rem] rounded-md hover:bg-purple-400 hover:text-black active:scale-80 ">
+            <button className="p-[10px_20px] border border-purple-400 text-purple-400 cursor-pointer text-[1.1rem] rounded-md hover:bg-purple-400 hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 ">
               Download CV
             </button>
           </motion.a>
