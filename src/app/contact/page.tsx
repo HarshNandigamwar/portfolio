@@ -240,9 +240,9 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   className={`border ${
                     loading
-                      ? "border-green-400 bg-green-800/20"
-                      : "border-purple-400"
-                  } rounded-md px-4 py-3 w-[50%] font-semibold font-mono text-purple-400 text-xl  md:text-2xl flex items-center justify-center gap-2 transform transition-transform duration-300 hover:scale-105 `}
+                      ? "border-green-400 bg-green-800/20 text-green-400"
+                      : "border-purple-400 text-purple-400"
+                  } rounded-md px-4 py-3 w-[50%] font-semibold font-mono text-md  md:text-2xl flex items-center justify-center gap-1 md:gap-2 transform transition-transform duration-300 hover:scale-105 `}
                 >
                   {loading && (
                     <svg

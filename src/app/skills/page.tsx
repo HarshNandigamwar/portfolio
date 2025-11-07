@@ -17,7 +17,6 @@ import {
 } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
-import ScaleOnView from "@/components/ScaleOnView";
 
 const skills = () => {
   const frontendSkills = [
@@ -157,7 +156,7 @@ const skills = () => {
             </h1>
             <div className="flex pr-1 gap-5 md:gap-6 flex-wrap w-screen ">
               {section.skills.map((data) => (
-                <ScaleOnView
+                <div
                   className="border border-purple-400 bg-purple-900/20 w-auto h-15 text-center flex items-center justify-evenly p-2 xl:px-3 rounded-lg gap-2 lg:gap-1 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400 hover:shadow-[0px_0px_30px_#9766e3] "
                   key={data.name}
                 >
@@ -165,7 +164,7 @@ const skills = () => {
                   <p title={data.name} className="text-[15px] md:text-[17px] ">
                     {data.name}
                   </p>
-                </ScaleOnView>
+                </div>
               ))}
             </div>
           </div>

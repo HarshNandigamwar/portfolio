@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdMenu } from "react-icons/md";
 import { FaX } from "react-icons/fa6";
@@ -34,13 +34,15 @@ const Header = () => {
     <nav className="w-full p-3 font-mono flex flex-col md:flex-row fixed backdrop-blur-sm">
       <div className="w-full flex items-center justify-between">
         {/* Logo */}
-        <p className="text-2xl md:text-3xl flex ">{logo}</p>
+        <a href="#home" className="text-2xl md:text-3xl flex cursor-pointer ">
+          {logo}
+        </a>
         {/* Desktop menu */}
         <div className="hidden md:flex gap-5 ">
           {menu.map((data) => {
             return (
               <a
-                className="text-2xl p-1 hover:text-purple-400 hover:underline hover:underline-offset-8 cursor-pointer "
+                className="text-2xl p-1 transform transition-transform duration-150 hover:scale-105 hover:text-purple-400 hover:underline hover:underline-offset-8 hover:font-extrabold cursor-pointer "
                 key={data.name}
                 href={`#${data.nav}`}
               >
@@ -77,7 +79,7 @@ const Header = () => {
                 <a
                   key={data.name}
                   href={`#${data.nav}`}
-                  className="hover:text-purple-400 py-1"
+                  className="transform transition-transform duration-150 hover:scale-105 hover:text-purple-400 hover:underline hover:underline-offset-8 hover:font-extrabold cursor-pointer py-1"
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}

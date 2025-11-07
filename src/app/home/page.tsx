@@ -6,7 +6,7 @@ const home = () => {
   return (
     <div
       id="home"
-      className="w-full flex flex-col md:flex-row p-2 items-center pt-20 h-screen"
+      className=" w-full flex flex-col md:flex-row p-2 items-center pt-20 h-screen"
     >
       {/* Image */}
       <div className="p-2 w-[50%] hidden md:flex items-center justify-center">
