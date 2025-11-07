@@ -101,62 +101,62 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <ScaleOnView>
-    <motion.div className="bg-purple-900/20 border border-purple-400 rounded-md shadow-lg overflow-hidden group hover:shadow-purple-400/40 transition-all">
-      {/* Image */}
-      <div className="w-full h-56 overflow-hidden">
-        <motion.img
-          key={currentImage}
-          src={project.images[currentImage]}
-          alt={project.title}
-          loading="lazy"
-          className="w-full h-full object-cover transition-all"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        />
-      </div>
-      {/* Info */}
-      <div className="p-5">
-        {/* Title */}
-        <h3 className="text-2xl font-semibold text-purple-400 mb-2">
-          {project.title}
-        </h3>
-        {/* Description */}
-        <p className="text-gray-300 mb-4">{project.description}</p>
-        {/* TechStack */}
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.techStack.map((tech, i) => (
-            <span
-              key={i}
-              className="border border-purple-400 bg-purple-900/20 text-purple-300 text-sm px-3 py-1 rounded-full"
+      <motion.div className="bg-purple-900/20 border border-purple-400 rounded-md shadow-lg overflow-hidden group hover:shadow-purple-400/40 transition-all">
+        {/* Image */}
+        <div className="w-full h-56 overflow-hidden">
+          <motion.img
+            key={currentImage}
+            src={project.images[currentImage]}
+            alt={project.title}
+            loading="lazy"
+            className="w-full h-full object-cover transition-all"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          />
+        </div>
+        {/* Info */}
+        <div className="p-5">
+          {/* Title */}
+          <h3 className="text-2xl font-semibold text-purple-400 mb-2">
+            {project.title}
+          </h3>
+          {/* Description */}
+          <p className="text-gray-300 mb-4">{project.description}</p>
+          {/* TechStack */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.techStack.map((tech, i) => (
+              <span
+                key={i}
+                className="border border-purple-400 bg-purple-900/20 text-purple-300 text-sm px-3 py-1 rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          {/* Github & Live Button */}
+          <div className="flex items-center gap-4">
+            {/* Github */}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
             >
-              {tech}
-            </span>
-          ))}
+              <BiLogoGithub size={25} /> GitHub
+            </a>
+            {/* Live */}
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
+            >
+              <BiGlobe size={25} /> Live
+            </a>
+          </div>
         </div>
-        {/* Github & Live Button */}
-        <div className="flex items-center gap-4">
-          {/* Github */}
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
-          >
-            <BiLogoGithub size={25} /> GitHub
-          </a>
-          {/* Live */}
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
-          >
-            <BiGlobe size={25} /> Live
-          </a>
-        </div>
-      </div>
-    </motion.div>
+      </motion.div>
     </ScaleOnView>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ScaleOnView from "@/components/ScaleOnView";
+import Link from "next/link";
 const about = () => {
   return (
     <div id="about" className="h-screen w-full pt-15">
@@ -48,26 +49,32 @@ const about = () => {
             </p>
             <div className="grid grid-cols-2 gap-6 pt-6">
               {/* Experience */}
-              <div title="Explore Experience">
-                <h4 className="font-semibold text-accent mb-2  flex items-center">
-                  Experience{" "}
-                </h4>
-                <p>1 Internship</p>
-              </div>
+              <Link href="/experience">
+                <div title="Explore Experience">
+                  <h4 className="font-semibold text-accent mb-2  flex items-center">
+                    Experience{" "}
+                  </h4>
+                  <p>1 Internship</p>
+                </div>
+              </Link>
               {/* Project */}
-              <div title="Explore Project">
-                <h4 className="font-semibold text-accent mb-2  flex items-center ">
-                  Projects{" "}
-                </h4>
-                <p>4+ Completed</p>
-              </div>
+              <Link href="/projects">
+                <div title="Explore Project">
+                  <h4 className="font-semibold text-accent mb-2  flex items-center ">
+                    Projects{" "}
+                  </h4>
+                  <p>4+ Completed</p>
+                </div>
+              </Link>
               {/* Certification */}
-              <div title="Explore certification">
-                <h4 className="font-semibold text-accent mb-2  flex items-center ">
-                  Certifications
-                </h4>
-                <p>3+ Won</p>
-              </div>
+              <Link href="/certifications">
+                <div title="Explore certification">
+                  <h4 className="font-semibold text-accent mb-2  flex items-center ">
+                    Certifications
+                  </h4>
+                  <p>3+ Won</p>
+                </div>
+              </Link>
             </div>
           </div>
         </ScaleOnView>
