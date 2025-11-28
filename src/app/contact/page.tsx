@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full pt-15 px-1 mb-5 ">
-      <h2 className="text-center font-mono text-5xl md:text-6xl text-purple-400 font-semibold">
+      <h2 className="text-center font-mono text-5xl md:text-6xl text-[#51a2ff] font-semibold">
         Get In Touch
       </h2>
       {/* Contact Grid */}
@@ -62,7 +62,7 @@ const Contact = () => {
                 Follow Me
               </h3>
               {/* Display on BigScreen */}
-              <div className="w-full hidden md:flex flex-col gap-4 p-3 text-purple-400">
+              <div className="w-full hidden md:flex flex-col gap-4 p-3 text-[#51a2ff]">
                 {/* X */}
                 <div className="p-2 flex items-center" title="Follow on X">
                   <a
@@ -71,7 +71,7 @@ const Contact = () => {
                     target="_blank"
                   >
                     <svg
-                      className="bg-purple-400 rounded-full h-10 w-10 "
+                      className="fill-[#51a2ff] rounded-full h-10 w-10 "
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 640 640"
                     >
@@ -91,7 +91,7 @@ const Contact = () => {
                     target="_blank"
                   >
                     <svg
-                      className="fill-purple-400 rounded-full h-10 w-10 "
+                      className="fill-[#51a2ff] rounded-full h-10 w-10 "
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="-2.5 0 19 19"
                     >
@@ -114,7 +114,7 @@ const Contact = () => {
                     target="_blank"
                   >
                     <svg
-                      className="fill-purple-400 h-6.5 w-6.5 "
+                      className="fill-[#51a2ff] h-6.5 w-6.5 "
                       viewBox="0 -2 44 44"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ const Contact = () => {
               </div>
 
               {/* Display only on Phone */}
-              <div className="md:hidden flex space-x-4 text-purple-400">
+              <div className="md:hidden flex space-x-4 text-[#51a2ff]">
                 {/* Linkedin  */}
                 <a
                   href="https://www.linkedin.com/in/shriharsh-nandigamwar-b106702b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -177,7 +177,7 @@ const Contact = () => {
         </ScaleOnView>
         {/* Contact Form */}
         <ScaleOnView>
-          <div className="border p-2 border-purple-400 bg-purple-950/20 rounded-md md:p-8 ">
+          <div className="border p-2 border-[#0a2473] bg-[#0a2473]/20 rounded-md md:p-8 ">
             <form
               id="contact-form"
               className="space-y-6 mb-5"
@@ -188,7 +188,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm text-purple-400 font-medium mb-2"
+                    className="block text-sm text-[#51a2ff] font-medium mb-2"
                   >
                     Name
                   </label>
@@ -197,7 +197,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     required
-                    className="w-full px-4 py-3 border border-purple-300 rounded-md bg-purple-950/20 hover:border-purple-400 focus:outline-none focus:bg-transparent "
+                    className="w-full px-4 py-3 border border-[#51a2ff] rounded-md bg-[#51a2ff]/10 hover:border-[#0a2473] focus:outline-none focus:bg-transparent "
                   />
                 </div>
 
@@ -205,7 +205,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm text-purple-400 font-medium mb-2"
+                    className="block text-sm text-[#51a2ff] font-medium mb-2"
                   >
                     Email
                   </label>
@@ -214,7 +214,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border border-purple-300 rounded-md bg-purple-950/20 hover:border-purple-400 focus:outline-none focus:bg-transparent"
+                    className="w-full px-4 py-3 border border-[#51a2ff] rounded-md bg-[#51a2ff]/10 hover:border-[#0a2473] focus:outline-none focus:bg-transparent"
                   />
                 </div>
               </div>
@@ -222,7 +222,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm text-purple-400 font-medium mb-2"
+                  className="block text-sm text-[#51a2ff] font-medium mb-2"
                 >
                   Message
                 </label>
@@ -231,7 +231,7 @@ const Contact = () => {
                   name="message"
                   rows={7}
                   required
-                  className="w-full px-4 py-3 border border-purple-300 rounded-md bg-purple-950/20 hover:border-purple-400"
+                  className="w-full px-4 py-3 border border-[#51a2ff] rounded-md bg-[#51a2ff]/10 hover:border-[#0a2473]"
                 ></textarea>
               </div>
               {/* Submit Button */}
@@ -241,7 +241,7 @@ const Contact = () => {
                   className={`border ${
                     loading
                       ? "border-green-400 bg-green-800/20 text-green-400"
-                      : "border-purple-400 text-purple-400"
+                      : "border-[#0a2473] text-[#51a2ff]"
                   } rounded-md px-4 py-3 w-[50%] font-semibold font-mono text-md  md:text-2xl flex items-center justify-center gap-1 md:gap-2 transform transition-transform duration-300 hover:scale-105 `}
                 >
                   {loading && (

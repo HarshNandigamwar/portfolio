@@ -29,7 +29,7 @@ const certification = () => {
     <div className="mb-15 w-full pt-15">
       {/* Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-center font-mono text-5xl md:text-6xl text-purple-400 font-semibold">
+        <h2 className="text-center font-mono text-5xl md:text-6xl text-[#51a2ff] font-semibold">
           Certifications
         </h2>
       </div>
@@ -38,7 +38,7 @@ const certification = () => {
         {certification.map((data) => (
           <div
             key={data.name}
-            className="bg-purple-900/20 border border-purple-400 rounded-md shadow-lg overflow-hidden group hover:shadow-purple-400/40 transition-all mt-5 md:flex  "
+            className="bg-[#0a2473]/20 border border-[#0a2473] rounded-md shadow-lg overflow-hidden group hover:shadow-[#51a2ff]/40 transition-all mt-5 md:flex  "
           >
             {/* Section 1 */}
             <div className="w-full p-2 md:flex md:flex-col md:items-center md:justify-center">
@@ -53,7 +53,7 @@ const certification = () => {
             {/* Section 2 */}
             <div className="p-2">
               {/* Provider name */}
-              <h2 className="text-2xl text-purple-400 md:text-4xl md:font-semibold md:text-center md:mt-5 ">
+              <h2 className="text-2xl text-[#51a2ff] md:text-4xl md:font-semibold md:text-center md:mt-5 ">
                 {data.name}{" "}
               </h2>
               {/* Description */}

@@ -78,7 +78,7 @@ const projects: Project[] = [
 export default function PortfolioProjects() {
   return (
     <section id="project" className="py-16 px-2 md:px-6 w-full pt-15">
-      <h2 className="text-center font-mono text-5xl md:text-6xl text-purple-400 font-semibold">
+      <h2 className="text-center font-mono text-5xl md:text-6xl text-[#51a2ff] font-semibold">
         My Projects
       </h2>
       <div className="mt-10 grid gap-10 md:grid-cols-2 max-w-7xl mx-auto">
@@ -101,7 +101,7 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <ScaleOnView>
-      <motion.div className="bg-purple-900/20 border border-purple-400 rounded-md shadow-lg overflow-hidden group hover:shadow-purple-400/40 transition-all">
+      <motion.div className="bg-[#0a2473]/20 border border-[#0a2473] rounded-md shadow-lg overflow-hidden group hover:shadow-[#0a2473]/40 transition-all">
         {/* Image */}
         <div className="w-full h-56 overflow-hidden">
           <motion.img
@@ -118,7 +118,7 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Info */}
         <div className="p-5">
           {/* Title */}
-          <h3 className="text-2xl font-semibold text-purple-400 mb-2">
+          <h3 className="text-2xl font-semibold text-[#51a2ff] mb-2">
             {project.title}
           </h3>
           {/* Description */}
@@ -128,7 +128,7 @@ function ProjectCard({ project }: { project: Project }) {
             {project.techStack.map((tech, i) => (
               <span
                 key={i}
-                className="border border-purple-400 bg-purple-900/20 text-purple-300 text-sm px-3 py-1 rounded-full"
+                className="border border-[#0a2473] bg-[#51a2ff]/10 text-[#51a2ff] text-sm px-3 py-1 rounded-full"
               >
                 {tech}
               </span>
@@ -141,7 +141,7 @@ function ProjectCard({ project }: { project: Project }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
+              className="w-[50%] border border-[#0a2473] flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-[#0a2473]/10 transform transition-transform duration-300 hover:scale-105 hover:bg-[#0a2473]/20 hover:text-[#51a2ff]  "
             >
               <BiLogoGithub size={25} /> GitHub
             </a>
@@ -150,7 +150,7 @@ function ProjectCard({ project }: { project: Project }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-[50%] border border-purple-400 flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-purple-900/20 transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400  "
+              className="w-[50%] border border-[#0a2473] flex p-2 items-center gap-2 rounded-md text-xl  md:text-2xl justify-center font-mono bg-[#0a2473]/10 transform transition-transform duration-300 hover:scale-105 hover:bg-[#0a2473]/20 hover:text-[#51a2ff]  "
             >
               <BiGlobe size={25} /> Live
             </a>

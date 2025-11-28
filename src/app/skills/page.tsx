@@ -30,11 +30,11 @@ const skills = () => {
     },
     {
       name: "JavaScript",
-      logo: <IoLogoJavascript color="#F7DF1E" className="h-6 w-6" />,
+      logo: <IoLogoJavascript color="#fdc700" className="h-6 w-6" />,
     },
     {
       name: "TypeScript",
-      logo: <SiTypescript color="#06B6D4" className="h-6 w-6" />,
+      logo: <SiTypescript color="#2b7fff" className="h-6 w-6" />,
     },
     {
       name: "NextJS",
@@ -42,29 +42,29 @@ const skills = () => {
     },
     {
       name: "React.js",
-      logo: <FaReact color="#61DAFB" className="h-6 w-6" />,
+      logo: <FaReact color="#51a2ff" className="h-6 w-6" />,
     },
     {
       name: "Redux Toolkit",
-      logo: <SiRedux color="#764ABC" className="h-6 w-6" />,
+      logo: <SiRedux color="#8200db" className="h-6 w-6" />,
     },
     {
       name: "Tailwind CSS",
-      logo: <RiTailwindCssFill color="#06B6D4" className="h-6 w-6" />,
+      logo: <RiTailwindCssFill color="#00d3f3" className="h-6 w-6" />,
     },
   ];
   const backendSkills = [
     {
       name: "Node.js",
-      logo: <FaNodeJs color="#339933" className="h-6 w-6" />,
+      logo: <FaNodeJs color="#00c951" className="h-6 w-6" />,
     },
     {
       name: "Express.js",
-      logo: <SiExpress color="#00ff00" className="h-6 w-6" />,
+      logo: <SiExpress color="#6a7282" className="h-6 w-6" />,
     },
     {
       name: "MongoDB",
-      logo: <SiMongodb color="#47A248" className="h-6 w-6" />,
+      logo: <SiMongodb color="#00a63e" className="h-6 w-6" />,
     },
     {
       name: "Mongoose",
@@ -88,7 +88,7 @@ const skills = () => {
   const tools = [
     {
       name: "Git",
-      logo: <FaGitAlt color="#F05032" className="h-6 w-6" />,
+      logo: <FaGitAlt color="#ff6900" className="h-6 w-6" />,
     },
     {
       name: "GitHub",
@@ -141,7 +141,7 @@ const skills = () => {
   ];
   return (
     <div id="skills" className=" w-full pt-15">
-      <h2 className="text-center font-mono text-5xl md:text-6xl text-purple-400 font-semibold">
+      <h2 className="text-center font-mono text-5xl md:text-6xl text-[#51a2ff] font-semibold">
         Skills & technologies
       </h2>
       <div className="mt-10 p-2 md:px-20 flex flex-col gap-10">
@@ -151,13 +151,13 @@ const skills = () => {
           { title: "Tools", skills: tools },
         ].map((section, idx) => (
           <div className="p-3 flex flex-col gap-4 px-3 md:px-5" key={idx}>
-            <h1 className="text-3xl md:text-5xl font-mono font-semibold text-purple-400">
+            <h1 className="text-3xl md:text-5xl font-mono font-semibold text-[#51a2ff]">
               {section.title}
             </h1>
             <div className="flex pr-1 gap-5 md:gap-6 flex-wrap w-screen ">
               {section.skills.map((data) => (
                 <div
-                  className="border border-purple-400 bg-purple-900/20 w-auto h-15 text-center flex items-center justify-evenly p-2 xl:px-3 rounded-lg gap-2 lg:gap-1 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:bg-purple-400/20 hover:text-purple-400 hover:shadow-[0px_0px_30px_#9766e3] "
+                  className="border border-[#0a2473] bg-[#51a2ff]/10 w-auto h-15 text-center flex items-center justify-evenly p-2 xl:px-3 rounded-lg gap-2 lg:gap-1 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:bg-[#51a2ff]/10 hover:text-[#51a2ff] hover:shadow-[0px_0px_30px_#51a2ff] "
                   key={data.name}
                 >
                   {data.logo}

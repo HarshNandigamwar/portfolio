@@ -8,7 +8,7 @@ const experience = () => {
     <div className="mb-15 w-full pt-15">
       {/* Heading */}
       <div className="text-center">
-        <h2 className="text-center font-mono text-5xl md:text-6xl text-purple-400 font-semibold">
+        <h2 className="text-center font-mono text-5xl md:text-6xl text-[#51a2ff] font-semibold">
           Experience
         </h2>
         <div className="w-20 h-1 bg-accent mx-auto"></div>
@@ -31,27 +31,27 @@ const experience = () => {
           <div>
             <div className="space-y-2 md:space-y-8 mt-2">
               <p className="text-lg ">
-                <span className="font-semibold text-purple-400">Name:</span>{" "}
+                <span className="font-semibold text-[#51a2ff]">Name:</span>{" "}
                 <span>Shriharsh Vijay Nandigamwar</span>
               </p>
               <p className="text-lg ">
-                <span className="font-semibold text-purple-400">
+                <span className="font-semibold text-[#51a2ff]">
                   Internship:
                 </span>{" "}
                 <span>Web Development</span>
               </p>
               <p className="text-lg ">
-                <span className="font-semibold text-purple-400">Company:</span>{" "}
+                <span className="font-semibold text-[#51a2ff]">Company:</span>{" "}
                 <span>SkillCraft Technology</span>
               </p>
               <p className="text-lg ">
-                <span className="font-semibold text-purple-400">Duration:</span>{" "}
+                <span className="font-semibold text-[#51a2ff]">Duration:</span>{" "}
                 <span className="text-[13px] md:text-lg  ">
                   15th February 2025 – 17th March 2025
                 </span>
               </p>
               <p className="text-lg ">
-                <span className="font-semibold text-purple-400">
+                <span className="font-semibold text-[#51a2ff]">
                   Certificate ID:
                 </span>{" "}
                 <span> SCT/FEB25/5707</span>
@@ -65,7 +65,7 @@ const experience = () => {
             whileTap={{ scale: 0.9 }}
             href="/documents/SkillCraft Tecnology Certificate & Letter of Recommendation.pdf"
             download="SkillCraft Tecnology Certificate & Letter of Recommendation.pdf"
-            className="p-[10px_20px] border border-purple-400 text-purple-400 cursor-pointer text-[1.1rem] rounded-md hover:bg-purple-400 hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 "
+            className="p-[10px_20px] border border-[#0a2473] text-[#51a2ff] cursor-pointer text-[1.1rem] rounded-md hover:bg-[#51a2ff] hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 "
           >
             Download Letter
           </motion.a>

@@ -31,14 +31,14 @@ const home = () => {
       {/*Info  */}
       <div className="text-center p-2 w-full md:w-[50%]">
         <h2 className="text-3xl md:text-5xl xl:text-4xl mb-2"> Hello, I'm</h2>
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-purple-400">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#51a2ff]">
           Shriharsh Nandigamwar
         </h1>
         <h2 className="text-xl md:text-4xl font-medium mb-4">
           {" "}
           FullStack Developer
         </h2>
-        <p className="text-[18px] md:text-[25px] lg:text-[22px] mb-4">
+        <p className="text-[#99a19f ] text-[18px] md:text-[25px] lg:text-[22px] mb-4">
           A Full Stack Developer passionate about crafting seamless digital
           experiences. Always excited to tackle new challenges where I can
           create value and grow as a coder. Let&apos;s connect if you&apos;ve
@@ -49,10 +49,10 @@ const home = () => {
           <motion.a
             whileTap={{ scale: 0.9 }}
             whileHover={{
-              backgroundColor: "#9766e3",
+              backgroundColor: "#51a2ff",
             }}
             transition={{ duration: 0.2 }}
-            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full ease-in-out hover:text-black transform transition-transform duration-300 hover:scale-105"
+            className="seeMyWorkBtn border border-[#0a2473] text-[#51a2ff] h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full ease-in-out hover:text-black transform transition-transform duration-300 hover:scale-105"
             href="#project"
           >
             See My Work
@@ -60,10 +60,10 @@ const home = () => {
           <motion.a
             whileTap={{ scale: 0.9 }}
             whileHover={{
-              backgroundColor: "#9766e3",
+              backgroundColor: "#51a2ff",
             }}
             transition={{ duration: 0.2 }}
-            className="seeMyWorkBtn border border-purple-400 text-purple-400 h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full transform transition-transform duration-300 hover:scale-105 hover:text-black"
+            className="seeMyWorkBtn border border-[#0a2473] text-[#51a2ff] h-10 w-40 flex items-center justify-center px-6 py-3 rounded-full transform transition-transform duration-300 hover:scale-105 hover:text-black"
             href="#contact"
           >
             Let's Connect
@@ -75,11 +75,11 @@ const home = () => {
             {/* GitHub */}
             <a
               href="https://github.com/HarshNandigamwar"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80 transform transition-transform duration-300 hover:scale-105"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-[#0a2473] m-[0_10px] shadow-[0px_0px_4px_#00000027] hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80 transform transition-transform duration-300 hover:scale-105"
               target="_blank"
             >
               <svg
-                className="cf-icon-svg h-[25px] w-[25px] fill-white hover:fill-purple-400"
+                className="cf-icon-svg h-[25px] w-[25px] fill-white hover:fill-[#51a2ff]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="-2.5 0 19 19"
               >
@@ -90,12 +90,12 @@ const home = () => {
             {/* Linkedin */}
             <a
               href="https://www.linkedin.com/in/shriharsh-nandigamwar-b106702b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-[#0a2473] m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
               target="_blank"
             >
               <svg
                 viewBox="0 -2 44 44"
-                className="h-[25px] w-[25px] fill-white hover:fill-purple-400"
+                className="h-[25px] w-[25px] fill-white hover:fill-[#51a2ff]"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -114,11 +114,11 @@ const home = () => {
             {/* X */}
             <a
               href="https://x.com/Harsh477011?s=09"
-              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-purple-400 m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
+              className="flex justify-center items-center w-[50px] h-[50px] rounded-full border border-[#0a2473] m-[0_10px] shadow-[0px_0px_4px_#00000027] transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_6px_3px_#00000027] active:scale-80"
               target="_blank"
             >
               <svg
-                className="h-[25px] w-[25px] fill-white hover:fill-purple-400"
+                className="h-[25px] w-[25px] fill-white hover:fill-[#51a2ff]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 640"
               >
@@ -132,7 +132,7 @@ const home = () => {
             href="/documents/Shriharsh_Nandigamwar_resume.pdf"
             download="ShriharshNandigamwar_FullstackDeveloper.pdf"
           >
-            <button className="p-[10px_20px] border border-purple-400 text-purple-400 cursor-pointer text-[1.1rem] rounded-md hover:bg-purple-400 hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 ">
+            <button className="p-[10px_20px] border border-[#0a2473] text-[#51a2ff] cursor-pointer text-[1.1rem] rounded-md hover:bg-[#51a2ff] hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 ">
               Download CV
             </button>
           </motion.a>
