@@ -66,8 +66,8 @@ const projects: Project[] = [
       " Sigma-AI is an advanced AI-powered chatbot web application built using NextJS, TypeScript and Gemini API . Designed with a modern UI Sigma-AI delivers smart, responsive, and context-aware conversations all in a fast, beautifully styled web app.",
     images: [
       "https://res.cloudinary.com/darmatnf2/image/upload/v1761028076/sigma_ai1_kg5tpj.jpg",
-      "https://res.cloudinary.com/darmatnf2/image/upload/v1761028076/Sigma_AI2_e5uchs.png",
-      "https://res.cloudinary.com/darmatnf2/image/upload/v1761028080/Sigma_AI3_t3ljgh.png",
+      "https://res.cloudinary.com/darmatnf2/image/upload/SigmaAI1_rv1xux.png",
+      "https://res.cloudinary.com/darmatnf2/image/upload/v1764916279/SigmaAI2_bhiidl.png",
     ],
     techStack: [
       "NextJS",
