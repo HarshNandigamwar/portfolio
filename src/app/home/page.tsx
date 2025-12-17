@@ -129,7 +129,7 @@ const home = () => {
           {/* Resume Button */}
           <motion.a
             whileTap={{ scale: 0.9 }}
-            href="/documents/Shriharsh_Nandigamwar_resume.pdf"
+            href="/documents/Shriharsh_Nandigamwar_Fullstack_resume.pdf"
             download="ShriharshNandigamwar_FullstackDeveloper.pdf"
           >
             <button className="p-[10px_20px] border border-[#0a2473] text-[#51a2ff] cursor-pointer text-[1.1rem] rounded-md hover:bg-[#51a2ff] hover:text-black active:scale-80 transform transition-transform duration-300 hover:scale-105 ">
